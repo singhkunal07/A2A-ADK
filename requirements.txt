@@ -1,0 +1,88 @@
+# Decision Flow Agent - Requirements File
+# Core A2A and ADK dependencies
+
+# A2A SDK - Agent-to-Agent Protocol
+a2a-sdk>=0.2.4
+
+# Google ADK - Agent Development Kit
+google-adk>=1.0.0
+
+# Google AI/LLM Dependencies
+google-genai>=1.9.0
+google-cloud-aiplatform[agent-engines]>=1.93.0
+
+# HTTP Client Libraries
+httpx>=0.28.1
+httpx-sse>=0.4.0
+
+# Web Framework (for A2A servers)
+starlette>=0.46.1
+uvicorn[standard]>=0.34.0
+sse-starlette>=2.2.1
+
+# Data Validation and Serialization
+pydantic>=2.10.6
+
+# Environment and Configuration
+python-dotenv>=1.1.0
+
+# CLI Framework
+click>=8.1.8
+
+# Async HTTP Client Support
+aiohttp>=3.9.0
+
+# JSON Web Tokens (for A2A authentication)
+pyjwt>=2.10.1
+jwcrypto>=1.5.6
+
+# Type Extensions
+typing-extensions>=4.12.2
+
+# Alternative LLM Providers (Optional)
+openai>=1.0.0
+anthropic>=0.25.0
+
+# Development and Testing
+pytest>=8.3.5
+pytest-asyncio>=0.26.0
+pytest-mock>=3.14.0
+
+# Code Formatting and Linting
+black>=25.1.0
+ruff>=0.11.2
+
+# Google Cloud Dependencies (for Vertex AI deployment)
+google-cloud-storage>=2.10.0
+google-auth>=2.20.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.2.0
+
+# Async Support
+asyncio-mqtt>=0.16.0  # For future MQTT support if needed
+
+# Logging and Monitoring
+structlog>=23.0.0
+
+# Utilities
+uuid>=1.30
+python-multipart>=0.0.6  # For file uploads in A2A
+
+# Performance and Caching
+cachetools>=5.3.0
+
+# Security
+cryptography>=41.0.0
+
+# Optional: Advanced Features
+# redis>=5.0.0  # Uncomment if using Redis for shared state
+# postgresql>=0.8.0  # Uncomment if using PostgreSQL for persistence
+# sqlalchemy>=2.0.0  # Uncomment if using SQL databases
+
+# Platform-specific dependencies (automatically handled)
+# Windows
+pywin32>=306; sys_platform == "win32"
+
+# Development utilities
+ipython>=8.0.0  # For interactive debugging
+jupyter>=1.0.0  # For notebook-based testing

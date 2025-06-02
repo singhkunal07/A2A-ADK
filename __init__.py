@@ -1,8 +1,9 @@
 """
-Create Plan Agent Package
-Specialized agent for creating detailed execution plans.
+Get Info Agent Package
+Specialized agent for collecting missing information from users.
 """
 
-from .agent_executor import CreatePlanAgentExecutor
+from .agent_executor import GetInfoAgentExecutor
 
-__all__ = ['CreatePlanAgentExecutor']
+__all__ = ['GetInfoAgentExecutor']
+
